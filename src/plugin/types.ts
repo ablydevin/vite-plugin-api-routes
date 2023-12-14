@@ -15,9 +15,11 @@ export type PluginConfig = {
   moduleId: string;
   server: string;
   handler: string;
+  configure: string;
   serverFile: string;
   handlerFile: string;
   routersFile: string;
+  configureFile: string;
   dirs: DirRoute[];
   include: string[];
   exclude: string[];
@@ -37,7 +39,7 @@ export type UserConfig = Partial<
     PluginConfig,
     | "serverFile"
     | "handlerFile"
-    | "configFile"
+    | "configureFile"
     | "routersFile"
     | "mapperList"
     | "watcherList"

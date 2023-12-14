@@ -10,6 +10,7 @@ export const pluginRestAPI = (opts: UserConfig = {}) => {
     root = process.cwd(),
     server = path.join(cacheDir, "server.js"),
     handler = path.join(cacheDir, "handler.js"),
+    configure = path.join(cacheDir, "configure.js"),
     routeBase = "api",
     dirs = [{ dir: "src/api", route: "", exclude: [] }],
     include = ["**/*.ts", "**/*.js"],
@@ -41,6 +42,7 @@ export const pluginRestAPI = (opts: UserConfig = {}) => {
   const serverFile = path.join(root, server);
   const handlerFile = path.join(root, handler);
   const routersFile = path.join(cacheDir, "routers.js");
+  const configureFile = path.join(root, configure);
 
   const mapperList = Object.entries(mapper)
     .filter((it) => it[1])
@@ -59,10 +61,12 @@ export const pluginRestAPI = (opts: UserConfig = {}) => {
     moduleId,
     server,
     handler,
+    configure,
     root,
     serverFile,
     handlerFile,
     routersFile,
+    configureFile,
     routeBase,
     dirs,
     include,

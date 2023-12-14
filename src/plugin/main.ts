@@ -20,6 +20,7 @@ export const pluginImpl = (config: PluginConfig): PluginOption => {
             [`${config.moduleId}/server`]: config.serverFile,
             [`${config.moduleId}/handler`]: config.handlerFile,
             [`${config.moduleId}/routers`]: config.routersFile,
+            [`${config.moduleId}/configure`]: config.configureFile,
           },
         },
       };
