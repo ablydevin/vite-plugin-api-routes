@@ -613,6 +613,11 @@ destroy@1.2.0:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
 
+dotenv-local@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv-local/-/dotenv-local-1.0.0.tgz#7e1b5a510bfd7951e381e072fe0232ac0a3713be"
+  integrity sha512-sH3QPOrd6wNIqPb+RQY+gH6+Gk0zLOPAe79JbiKvFvO8oTrvylCS2w4Z8gp2ptMjchni8Cws/O+mqlsA0RbGvQ==
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -1241,12 +1246,6 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-"vite-plugin-rest-api@file:..":
-  version "1.0.2"
-  dependencies:
-    fast-glob "^3.3.1"
-    slash-path "^0.0.1"
-
 vite-plugin-chunk-split@^0.4.7:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/vite-plugin-chunk-split/-/vite-plugin-chunk-split-0.4.7.tgz#3ada0e85b4e4cc4fba7540c4fc691aec4f893c07"
@@ -1254,6 +1253,12 @@ vite-plugin-chunk-split@^0.4.7:
   dependencies:
     es-module-lexer "^1.0.3"
     magic-string "^0.26.3"
+
+"vite-plugin-rest-api@file:..":
+  version "1.0.7"
+  dependencies:
+    fast-glob "^3.3.1"
+    slash-path "^0.0.1"
 
 vite@^4.4.5:
   version "4.4.9"
